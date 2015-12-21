@@ -74,7 +74,7 @@ var ds1 = new Spry.Data.HTMLDataSet(null, "page-loader");
 				<li><a href="#page-resume" class="link-home">Home</a></li>
 				<li><a href="#page-resume" class="link-page">Resume</a></li>
 				<li><a href="#page-skills" class="link-page">Skills</a></li>
-				<li><a href="#page-blog" class="link-page">Articles</a></li>
+				<li><a href="#page-blog" class="link-page">Blog</a></li>
 				<li><a href="#page-contact" class="link-page">Contact</a></li>
 			</ul>
 		</div>
@@ -437,7 +437,7 @@ var ds1 = new Spry.Data.HTMLDataSet(null, "page-loader");
 			<div class="section-blog">
 
 				<!-- Section title -->
-	            <h2 class="section-title">Interesting Articles</h2>
+	            <h2 class="section-title">Blog</h2>
 	            <!-- /Section title -->          
 				
 				<!-- BLOG POSTS -->
@@ -445,21 +445,26 @@ var ds1 = new Spry.Data.HTMLDataSet(null, "page-loader");
 					<!-- blog-item -->
 					<div class="blog-item">
 						<div class="blog-item-wrapper">
+							<!-- blog item thumbnail -->
+							<div class="blog-item-thumb">
+								<a href="article/Gomez-Botnet-Research-through-Life-Cycle-2013.html" class="loadPost"><img src="img/blog1.jpg" alt=""></a>
+							</div>
+							<!-- /blog item thumbnail -->
 							<!-- Blog item - infos -->
 							<div class="blog-item-infos">
 								<!-- blog-item-title -->
 								<div class="blog-item-title-wrapper">
-									<h2 class="blog-item-title title-border"><a href="http://romisatriawahono.net/lecture/rm/survey/network%20security/Gomez%20-%20Botnet%20Research%20through%20Life-Cycle%20-%202013.pdf" target="new" >Survey and Taxonomy of Botnet Research through Life-Cycle</a></h2>
+									<h2 class="blog-item-title title-border"><a href="article/Gomez-Botnet-Research-through-Life-Cycle-2013.html" class="loadPost">Survey and Taxonomy of Botnet Research through Life-Cycle</a></h2>
 								</div>
 								<!-- /blog-item-title -->
 								<!-- blog item - description -->
 								<div class="blog-item-description">
-									<p><a href="http://romisatriawahono.net/lecture/rm/survey/network%20security/Gomez%20-%20Botnet%20Research%20through%20Life-Cycle%20-%202013.pdf" target="new" >Of all current threats to cybersecurity, botnets are at the top of the list. In consequence, interest in this problem is increasing rapidly among the research community and the number of publications on the question has grown exponentially in recent years. This article proposes a taxonomy of botnet research and presents a survey of the field to provide a comprehensive overview of all these contributions....</a></p>
+									<p><a href="article/Gomez-Botnet-Research-through-Life-Cycle-2013.html" class="loadPost">Of all current threats to cybersecurity, botnets are at the top of the list. In consequence, interest in this problem is increasing rapidly among the research community and the number of publications on the question has grown exponentially in recent years. This article proposes a taxonomy of botnet research and presents a survey of the field to provide a comprehensive overview of all these contributions....</a></p>
 								</div>
 								<!-- /blog-item-description -->
 								<!-- blog item - link -->
 								<div class="blog-item-link">
-                                                                    <a href="article/Gomez-Botnet-Research-through-Life-Cycle-2013.html" class="btn btn-default" target="new">See More</a>
+									<a href="article/Gomez-Botnet-Research-through-Life-Cycle-2013.html" class="btn btn-default loadPost">See More</a>
 								</div>
 								<!-- /blog item - link -->
 							</div>
@@ -618,9 +623,22 @@ var ds1 = new Spry.Data.HTMLDataSet(null, "page-loader");
 			<div class="section-blog-single">
 				<!-- Load the single.html content via AJAX -->
 				<div id="postHere"><div class="blog-single-post" id="blogPost">
+				<!-- post image -->
+				<div class="post-header-image">
+					<img src="img/blog3.jpg" alt="">
+				</div>										
+				<!-- /post-image -->	
+
+				<!-- post title -->
+				<h2 class="blog-single-title title-border">This is your post title!</h2>
+				<!-- /post title -->
+													
 				<!-- post content -->
 				<div class="blog-single-content">
-                                    <iframe src="Gomez-Botnet-Research-through-Life-Cycle-2013.pdf" frameborder="0" style="height: 510px"></iframe>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales varius sagittis. Proin a arcu vitae turpis congue facilisis. Quisque a lectus pretium, sagittis augue in, fringilla risus. Quisque elementum, ante a maximus commodo, dui metus imperdiet mi, sit amet tempor lectus erat ac orci. Mauris suscipit rhoncus lobortis. Quisque tincidunt nisi libero. Fusce nec turpis quis enim finibus porta. Donec eget sapien ac leo tempor elementum a at ante. In volutpat placerat quam non cursus. Nunc rutrum nisl at diam maximus tempor. Fusce eget commodo lorem. In et fringilla tellus. Donec vitae laoreet lacus. Donec varius, velit at varius ornare, augue orci posuere enim, in dignissim quam dui nec turpis. Donec molestie sollicitudin elit eget porttitor.</p>
+					<p> Sed dignissim facilisis ex. Maecenas mattis velit orci, ut rhoncus tellus dapibus ut. Ut placerat tortor sed felis pellentesque pharetra. Etiam commodo elementum mollis. Donec aliquam sem id odio porttitor sodales id id arcu. Maecenas vulputate dictum nulla, a vestibulum purus varius id. Cras non mollis enim.</p>
+					<p>Donec cursus massa sed sapien laoreet, eget vulputate urna interdum. Proin quis neque sem. Curabitur accumsan mollis malesuada. Donec nec ultrices ante. Nam sed elit aliquet, convallis augue in, rhoncus ante. Integer vulputate lectus dui, et dictum magna commodo et. Curabitur scelerisque finibus tortor pellentesque iaculis. Ut varius aliquet suscipit. Praesent commodo quam tempor, volutpat felis ut, imperdiet nulla. Sed eu libero sed nisl semper sagittis. Nunc odio arcu, convallis a nulla nec, egestas auctor lectus. Morbi finibus justo commodo turpis laoreet commodo. Sed auctor vel orci eu tincidunt.</p>
+					<p>Vivamus non odio egestas, condimentum nunc nec, venenatis tellus. Morbi tempor sagittis scelerisque. Donec hendrerit dictum lobortis. Nulla eget lacus commodo, malesuada metus sed, faucibus odio. Ut convallis diam eu consequat vehicula. Nulla massa neque, consectetur quis nunc quis, fringilla viverra lorem. Cras auctor at risus pellentesque elementum. Pellentesque odio magna, fringilla non fermentum in, luctus dapibus mauris. Mauris commodo est eget sem maximus, vitae tempor purus facilisis. Cras accumsan diam at sem egestas, eget lobortis quam vestibulum. Sed rutrum interdum dolor, at commodo magna feugiat ac. Integer euismod dignissim feugiat. Aliquam erat volutpat. Vestibulum ac libero sit amet erat molestie pulvinar nec ut urna. Vestibulum dapibus pretium mauris ac porttitor. Aliquam sagittis velit et placerat</p>
 				</div>
 				<!-- /post content -->
 			</div></div>			
