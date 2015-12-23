@@ -128,8 +128,12 @@ var ds1 = new Spry.Data.HTMLDataSet(null, "page-loader");
 			</div>
 		</div>
 		<!-- /SECTION: vCard Body  -->	
-
-		<!-- PAGE: RESUME -->
+        <!-- Mobile MENU -->
+      <ul id="accordion" class="accordion">
+            <li>
+                <div class="link"><i class="fa fa-paint-brush"></i>Diseño web<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <!-- PAGE: RESUME -->
 		<div class="section-vcardbody section-page" id="page-resume">
 
 			<!-- SECTION: Education -->
@@ -283,6 +287,37 @@ var ds1 = new Spry.Data.HTMLDataSet(null, "page-loader");
 			 
 		</div>
 		<!-- /PAGE: RESUME  -->	
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-code"></i>Desarrollo front-end<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">Frameworks javascript</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-mobile"></i>Diseño responsive<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Dispositivos mobiles</a></li>
+                    <li><a href="#">Medios de escritorio</a></li>
+                    <li><a href="#">Otros dispositivos</a></li>
+                </ul>
+            </li>
+            <li><div class="link"><i class="fa fa-globe"></i>Posicionamiento web<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Bing</a></li>
+                    <li><a href="#">Yahoo</a></li>
+                    <li><a href="#">Otros buscadores</a></li>
+                </ul>
+            </li>
+		</ul>
+
+        <!-- /Mobile MENU -->
+		
 
 		<!-- SECTION: SKILLS-->
 		<div class="section-vcardbody section-page" id="page-skills">
@@ -604,21 +639,7 @@ var ds1 = new Spry.Data.HTMLDataSet(null, "page-loader");
 		</div>
 		<!-- /SECTION: BLOG  -->	
  
-		<!-- SECTION: BLOG SINGLE-->
-		<div class="section-vcardbody section-page section-page-single" id="page-blog-single">
-			<div class="section-blog-single">
-				<!-- Load the single.html content via AJAX -->
-				<div id="postHere"><div class="blog-single-post" id="blogPost">
-				<!-- post content -->
-				<div class="blog-single-content">
-                                    <!-- <iframe src="Gomez-Botnet-Research-through-Life-Cycle-2013.pdf" frameborder="0" style="height: 510px"></iframe> -->
-				</div>
-				<!-- /post content -->
-			</div></div>			
-				<!-- /Load the single.html content via AJAX -->
-			</div>			
-		</div>
-		<!-- /SECTION: BLOG SINGLE  -->
+		<!-- SECTION: BLOG SINGLE--><!-- /SECTION: BLOG SINGLE  -->
 
 		<!-- SECTION: CONTACT-->
 		<div class="section-vcardbody section-page" id="page-contact">
@@ -745,28 +766,9 @@ var ds1 = new Spry.Data.HTMLDataSet(null, "page-loader");
 
 </script>
 
-<!-- Floating up to top -->
-<script type="text/javascript">
-// create the back to top button
-$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
-
-var amountScrolled = 300;
-
-$(window).scroll(function() {
-	if ( $(window).scrollTop() > amountScrolled ) {
-		$('a.back-to-top').fadeIn('slow');
-	} else {
-		$('a.back-to-top').fadeOut('slow');
-	}
-});
-
-$('a.back-to-top, a.simple-back-to-top').click(function() {
-	$('html, body').animate({
-		scrollTop: 0
-	}, 500);
-	return false;
-});
-</script>
+<!-- Mobile MENU -->
+<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+<script src="js/index.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
